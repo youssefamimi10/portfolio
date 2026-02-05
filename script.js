@@ -1,4 +1,4 @@
-﻿const revealItems = Array.from(document.querySelectorAll("[data-reveal]"));
+const revealItems = Array.from(document.querySelectorAll("[data-reveal]"));
 
 const observer = new IntersectionObserver(
   (entries) => {
