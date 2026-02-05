@@ -561,6 +561,26 @@ body {
   opacity: 1;
 }
 
+.trust-mini {
+  gap: 12px;
+}
+
+.trust-mini p {
+  font-weight: 600;
+  color: var(--muted);
+  margin: 0;
+}
+
+.trust-mini .trust-logos {
+  gap: 12px;
+}
+
+.trust-mini .trust-logos img {
+  height: 34px;
+  filter: none;
+  opacity: 1;
+}
+
 .experience-header {
   display: grid;
   grid-template-columns: auto 1fr;
