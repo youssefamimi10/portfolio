@@ -306,6 +306,21 @@ body {
   color: var(--muted);
 }
 
+.competence-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.competence-logos img {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(0);
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
