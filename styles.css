@@ -599,12 +599,27 @@ body {
 
 .skill {
   background: #fff;
-  padding: 14px 18px;
-  border-radius: 999px;
+  padding: 16px 18px;
+  border-radius: 18px;
   border: 1px solid var(--border);
   font-weight: 600;
-  text-align: center;
+  text-align: left;
+  display: grid;
+  gap: 10px;
   box-shadow: var(--shadow);
+}
+
+.skill-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skill-icons img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
 }
 
 .contact {
