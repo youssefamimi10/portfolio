@@ -575,6 +575,18 @@ body {
   opacity: 1;
 }
 
+.competence-logos-card {
+  margin: 18px 0 24px;
+}
+
+.competence-logos-card .trust-logos {
+  gap: 14px;
+}
+
+.competence-logos-card .trust-logos img {
+  height: 32px;
+}
+
 .experience-header {
   display: grid;
   grid-template-columns: auto 1fr;
