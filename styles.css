@@ -520,6 +520,23 @@ body {
   gap: 10px;
 }
 
+.experience-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items: center;
+}
+
+.experience-logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+  padding: 6px;
+}
+
 .experience-meta {
   color: var(--accent-2);
   font-weight: 600;
