@@ -520,27 +520,6 @@ body {
   gap: 10px;
 }
 
-.trust {
-  padding: 20px 8vw 10px;
-  position: relative;
-  z-index: 2;
-}
-
-.trust-inner {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px 20px;
-  display: grid;
-  gap: 12px;
-  box-shadow: var(--shadow);
-}
-
-.trust-inner p {
-  color: var(--muted);
-  font-weight: 600;
-}
-
 .trust-logos {
   display: flex;
   flex-wrap: wrap;
