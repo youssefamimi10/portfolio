@@ -122,9 +122,31 @@ body {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: minmax(220px, 1fr) minmax(0, 2fr);
   gap: 40px;
-  align-items: center;
+  align-items: stretch;
+}
+
+.hero-portrait {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  min-height: 520px;
+}
+
+.hero-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-content {
+  display: grid;
+  gap: 32px;
 }
 
 .page-hero {
@@ -716,6 +738,14 @@ body {
 
   .hero {
     padding: 32px 6vw 70px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-portrait {
+    min-height: 360px;
   }
 
   .section {
