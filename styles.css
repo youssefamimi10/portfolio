@@ -40,7 +40,8 @@ body {
 .hero {
   position: relative;
   z-index: 2;
-  padding: 40px 8vw 80px;
+  padding: 0;
+  min-height: 100vh;
   background:
     radial-gradient(circle at 15% 15%, rgba(242, 193, 78, 0.35), transparent 55%),
     radial-gradient(circle at 80% 5%, rgba(31, 93, 143, 0.2), transparent 40%),
@@ -52,7 +53,8 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
+  padding: 32px 8vw 0;
 }
 
 .logo {
@@ -122,27 +124,44 @@ body {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(220px, 1fr) minmax(0, 2fr);
-  gap: 40px;
+  grid-template-columns: minmax(240px, 1fr) minmax(0, 2fr);
+  gap: 48px;
   align-items: stretch;
+  min-height: calc(100vh - 120px);
+  padding: 0 8vw 80px 0;
 }
 
 .hero-portrait {
   position: relative;
-  border-radius: 28px;
+  border-radius: 0;
   overflow: hidden;
   background: transparent;
   border: none;
   box-shadow: none;
   min-height: 520px;
+  align-self: stretch;
 }
 
 .hero-portrait img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
   filter: saturate(1.02) contrast(1.02);
+}
+
+.hero-portrait::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 243, 228, 0.55) 0%,
+    rgba(246, 241, 234, 0.2) 45%,
+    rgba(248, 244, 239, 0) 70%
+  );
+  pointer-events: none;
 }
 
 .hero-content {
@@ -730,6 +749,7 @@ body {
   .nav {
     flex-direction: column;
     align-items: flex-start;
+    padding: 24px 6vw 0;
   }
 
   .nav-links {
@@ -738,15 +758,18 @@ body {
   }
 
   .hero {
-    padding: 32px 6vw 70px;
+    padding: 0;
   }
 
   .hero-grid {
     grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 0 6vw 70px;
   }
 
   .hero-portrait {
     min-height: 360px;
+    margin: 0 -6vw;
   }
 
   .section {
