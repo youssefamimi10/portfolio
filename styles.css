@@ -161,7 +161,7 @@ body {
 }
 
 .hero-copy h1 {
-  font-family: "Fraunces", serif;
+  font-family: "Space Grotesk", system-ui, sans-serif;
   font-size: clamp(2.3rem, 3vw + 1.5rem, 4.2rem);
   line-height: 1.1;
   margin-bottom: 24px;
