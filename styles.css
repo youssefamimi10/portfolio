@@ -60,15 +60,14 @@ body {
 .logo {
   font-family: "Fraunces", serif;
   font-size: 1.4rem;
-  padding: 6px 16px 6px 6px;
+  padding: 6px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: #fff;
   box-shadow: var(--shadow);
   display: inline-flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
+  justify-content: center;
   color: var(--ink);
   text-decoration: none;
 }
@@ -81,12 +80,6 @@ body {
   display: block;
 }
 
-.logo-name {
-  font-weight: 600;
-  font-size: 1.05rem;
-  letter-spacing: -0.01em;
-  white-space: nowrap;
-}
 
 .nav-links {
   display: flex;
