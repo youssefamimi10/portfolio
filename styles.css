@@ -970,8 +970,8 @@ body {
     flex-direction: column;
     gap: 10px;
     align-items: flex-start;
-    padding: 12px 6px 8px;
-    border-top: 1px solid var(--border);
+    padding: 0;
+    border-top: 0;
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -985,6 +985,8 @@ body {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+    padding: 12px 6px 8px;
+    border-top: 1px solid var(--border);
   }
 
   .nav-toggle {
