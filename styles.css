@@ -73,7 +73,7 @@ body {
   justify-content: center;
   gap: 16px;
   width: min(1200px, 92vw);
-  margin: 20px auto 32px;
+  margin: 0 auto 28px;
   padding: 12px 20px;
   background: #fff;
   border: 1px solid rgba(29, 26, 22, 0.1);
@@ -831,7 +831,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: calc(100% - 12vw);
-    margin: 16px auto 24px;
+    margin: 12px auto 24px;
     padding: 14px 16px;
     border-radius: 16px;
   }
