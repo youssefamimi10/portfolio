@@ -53,7 +53,11 @@ navs.forEach((nav) => {
   const closeMenu = () => {
     setOpen(false);
     if (mobileQuery.matches) {
-      links.setAttribute("hidden", "");
+      window.setTimeout(() => {
+        if (!nav.classList.contains("is-open")) {
+          links.setAttribute("hidden", "");
+        }
+      }, 240);
     }
   };
 
