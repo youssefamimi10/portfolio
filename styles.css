@@ -42,10 +42,20 @@ body {
   z-index: 2;
   padding: 0;
   min-height: 100vh;
-  background:
-    radial-gradient(circle at 15% 15%, rgba(242, 193, 78, 0.35), transparent 55%),
-    radial-gradient(circle at 80% 5%, rgba(31, 93, 143, 0.2), transparent 40%),
-    linear-gradient(120deg, #fff3e4, #f6f1ea 45%, #f8f4ef 80%);
+  background: url("PhotoProfil.jpeg?v=20260209-2") center / cover no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(246, 241, 234, 0.65);
+  z-index: 0;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .nav {
@@ -56,6 +66,7 @@ body {
   gap: 16px;
   margin-bottom: 32px;
   padding: 32px 8vw 0;
+  width: 100%;
 }
 
 .logo {
@@ -88,6 +99,8 @@ body {
   font-weight: 500;
   flex-wrap: wrap;
   justify-self: center;
+  justify-content: center;
+  grid-column: 2;
 }
 
 .nav a {
@@ -119,22 +132,24 @@ body {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(240px, 1fr) minmax(0, 2fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 48px;
-  align-items: stretch;
+  align-items: center;
   min-height: calc(100vh - 120px);
-  padding: 0 8vw 80px 0;
+  padding: 0 8vw 80px;
 }
 
 .hero-portrait {
+  display: none;
   position: relative;
   border-radius: 0;
   overflow: hidden;
   background: transparent;
   border: none;
   box-shadow: none;
-  min-height: 520px;
-  align-self: stretch;
+  aspect-ratio: 16 / 9;
+  min-height: clamp(220px, 32vh, 360px);
+  align-self: start;
 }
 
 .hero-portrait img {
@@ -171,9 +186,9 @@ body {
   z-index: 2;
   padding: 32px 8vw 50px;
   background:
-    radial-gradient(circle at 20% 20%, rgba(242, 193, 78, 0.28), transparent 55%),
-    radial-gradient(circle at 80% 0%, rgba(31, 93, 143, 0.2), transparent 40%),
-    linear-gradient(120deg, #fff3e4, #f6f1ea 45%, #f8f4ef 80%);
+    radial-gradient(circle at 80% 20%, rgba(242, 193, 78, 0.28), transparent 55%),
+    radial-gradient(circle at 20% 0%, rgba(31, 93, 143, 0.2), transparent 40%),
+    linear-gradient(300deg, #fff3e4, #f6f1ea 45%, #f8f4ef 80%);
 }
 
 .page-hero .nav {
@@ -698,6 +713,10 @@ body {
   object-fit: contain;
 }
 
+.skill-icons img[alt="Yooz"] {
+  border: 1px solid #000;
+}
+
 .contact {
   background: linear-gradient(135deg, #fff3e4, #f6f1ea);
 }
@@ -754,13 +773,14 @@ body {
   .nav {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 24px 6vw 0;
   }
 
   .nav-links {
     flex-wrap: wrap;
     gap: 14px;
+    justify-content: center;
   }
 
   .hero {
@@ -774,7 +794,7 @@ body {
   }
 
   .hero-portrait {
-    min-height: 360px;
+    min-height: clamp(200px, 35vh, 320px);
     margin: 0 -6vw;
   }
 
@@ -810,4 +830,5 @@ body {
 
 .nav .btn {
   justify-self: end;
+  grid-column: 3;
 }
