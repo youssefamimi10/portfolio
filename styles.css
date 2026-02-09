@@ -71,9 +71,15 @@ body {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 32px;
-  padding: 32px 8vw 0;
-  width: 100%;
+  width: min(1200px, 92vw);
+  margin: 24px auto 32px;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(29, 26, 22, 0.12);
+  border-radius: 999px;
+  box-shadow: 0 14px 30px rgba(21, 17, 12, 0.14);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .logo {
@@ -767,7 +773,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px 6vw 0;
+    width: calc(100% - 12vw);
+    margin: 20px auto 28px;
+    padding: 14px 16px;
+    border-radius: 22px;
   }
 
   .nav-links {
