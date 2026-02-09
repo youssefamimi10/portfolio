@@ -636,8 +636,12 @@ body {
 .about-cards {
   display: grid;
   gap: 18px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
   align-content: start;
+}
+
+.about-card.education {
+  grid-column: 1 / -1;
 }
 
 .about-card {
@@ -904,6 +908,10 @@ body {
 
   .about-cards {
     grid-template-columns: 1fr;
+  }
+
+  .about-card.education {
+    grid-column: auto;
   }
 }
 
