@@ -966,28 +966,55 @@ body {
   .nav-links {
     grid-column: 1 / -1;
     grid-row: 2;
-    display: none;
+    display: flex;
     flex-direction: column;
-    gap: 12px;
-    align-items: center;
-    padding: 6px 0 4px;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 12px 6px 8px;
+    border-top: 1px solid var(--border);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transform: translateY(-6px);
+    transition: max-height 0.35s ease, opacity 0.2s ease, transform 0.25s ease;
   }
 
   .nav.is-open .nav-links {
-    display: flex;
+    max-height: 320px;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
   }
 
   .nav-toggle {
     display: inline-flex;
-    grid-column: 2;
-    grid-row: 1;
-    justify-self: center;
-  }
-
-  .nav .btn {
     grid-column: 3;
     grid-row: 1;
     justify-self: end;
+  }
+
+  .nav .btn {
+    display: none;
+    grid-column: 1 / -1;
+    grid-row: 3;
+    justify-self: stretch;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav.is-open .btn {
+    display: inline-flex;
+  }
+
+  .logo {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  .nav a {
+    font-size: 0.98rem;
   }
 
   .hero {
