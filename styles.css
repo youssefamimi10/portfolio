@@ -42,7 +42,7 @@ body {
   z-index: 2;
   padding: 0;
   min-height: 100vh;
-  background: url("PhotoProfil.jpeg?v=20260209-3") center / cover no-repeat;
+  background: url("PhotoProfil.jpeg?v=20260209-4") center / cover no-repeat;
 }
 
 .hero::before {
@@ -51,10 +51,11 @@ body {
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(246, 241, 234, 0.22) 0%,
-    rgba(246, 241, 234, 0.32) 33%,
-    rgba(246, 241, 234, 0.7) 62%,
-    rgba(246, 241, 234, 0.88) 100%
+    rgba(246, 241, 234, 0) 0%,
+    rgba(246, 241, 234, 0) 35%,
+    rgba(246, 241, 234, 0.4) 55%,
+    rgba(246, 241, 234, 0.75) 78%,
+    rgba(246, 241, 234, 0.9) 100%
   );
   z-index: 0;
 }
