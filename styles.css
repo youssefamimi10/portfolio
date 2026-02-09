@@ -42,7 +42,7 @@ body {
   z-index: 2;
   padding: 0;
   min-height: 100vh;
-  background: url("PhotoProfil.jpeg?v=20260209-4") center / cover no-repeat;
+  background: url("PhotoProfil.jpeg?v=20260209-5") center / cover no-repeat;
 }
 
 .hero::before {
@@ -52,10 +52,11 @@ body {
   background: linear-gradient(
     90deg,
     rgba(246, 241, 234, 0) 0%,
-    rgba(246, 241, 234, 0) 35%,
-    rgba(246, 241, 234, 0.4) 55%,
-    rgba(246, 241, 234, 0.75) 78%,
-    rgba(246, 241, 234, 0.9) 100%
+    rgba(246, 241, 234, 0) 33%,
+    rgba(246, 241, 234, 0.22) 45%,
+    rgba(246, 241, 234, 0.55) 60%,
+    rgba(246, 241, 234, 0.82) 78%,
+    rgba(246, 241, 234, 0.93) 100%
   );
   z-index: 0;
 }
@@ -71,15 +72,13 @@ body {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  width: min(1200px, 92vw);
-  margin: 24px auto 32px;
-  padding: 12px 20px;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(29, 26, 22, 0.12);
-  border-radius: 999px;
-  box-shadow: 0 14px 30px rgba(21, 17, 12, 0.14);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  width: 100%;
+  margin-bottom: 32px;
+  padding: 32px 8vw 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .logo {
@@ -773,10 +772,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(100% - 12vw);
-    margin: 20px auto 28px;
-    padding: 14px 16px;
-    border-radius: 22px;
+    width: 100%;
+    margin: 0 0 24px;
+    padding: 24px 6vw 0;
   }
 
   .nav-links {
