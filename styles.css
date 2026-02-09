@@ -954,13 +954,18 @@ body {
   .nav {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto 0fr auto;
     align-items: center;
     width: calc(100% - 12vw);
     margin: 12px auto 24px;
-    padding: 12px 14px;
-    border-radius: 16px;
-    gap: 8px 12px;
+    padding: 8px 12px;
+    border-radius: 14px;
+    gap: 6px 12px;
+    box-shadow: 0 8px 18px rgba(21, 17, 12, 0.12);
+  }
+
+  .nav.is-open {
+    grid-template-rows: auto 1fr auto;
   }
 
   .nav-links {
@@ -969,7 +974,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: flex-start;
+    align-items: stretch;
     padding: 0;
     border-top: 0;
     max-height: 0;
@@ -994,6 +999,12 @@ body {
     grid-column: 3;
     grid-row: 1;
     justify-self: end;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    box-shadow: none;
   }
 
   .nav .btn {
@@ -1007,6 +1018,7 @@ body {
 
   .nav.is-open .btn {
     display: inline-flex;
+    margin-top: 6px;
   }
 
   .logo {
@@ -1017,6 +1029,11 @@ body {
 
   .nav a {
     font-size: 0.98rem;
+  }
+
+  .nav-links a {
+    width: 100%;
+    text-align: left;
   }
 
   .hero {
@@ -1052,7 +1069,16 @@ body {
 
   .hero-cards {
     justify-self: stretch;
-    gap: 16px;
+    gap: 12px;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(220px, 80%);
+    overflow-x: auto;
+    padding-bottom: 6px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .hero-cards .stat-card {
+    scroll-snap-align: start;
   }
 
   .stat-card {
