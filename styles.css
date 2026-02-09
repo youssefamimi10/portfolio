@@ -1050,6 +1050,15 @@ body {
     padding: 0 6vw 70px;
   }
 
+  .hero-cards {
+    justify-self: stretch;
+    gap: 16px;
+  }
+
+  .stat-card {
+    padding: 16px 18px;
+  }
+
   .hero-portrait {
     display: none;
   }
@@ -1064,6 +1073,19 @@ body {
 
   .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  .competence-logos-card .trust-logos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .competence-logos-card .trust-logos img {
+    height: 26px;
+    max-width: 62px;
   }
 }
 
