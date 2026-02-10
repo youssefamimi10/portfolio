@@ -148,6 +148,10 @@ body {
   display: none;
 }
 
+.nav .btn.desktop-only {
+  display: inline-flex;
+}
+
 .nav-toggle {
   display: none;
   width: 48px;
@@ -373,6 +377,14 @@ body {
   color: var(--ink);
   border: 1px solid var(--border);
   box-shadow: none;
+}
+
+.btn.mobile-only {
+  display: none;
+}
+
+.btn.desktop-only {
+  display: inline-flex;
 }
 
 .hero-cards {
@@ -1046,6 +1058,14 @@ body {
     display: inline-flex;
     width: 100%;
     justify-content: center;
+  }
+
+  .btn.mobile-only {
+    display: inline-flex;
+  }
+
+  .btn.desktop-only {
+    display: none;
   }
 
   .hero {
