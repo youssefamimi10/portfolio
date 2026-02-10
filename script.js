@@ -37,16 +37,19 @@ navs.forEach((nav) => {
       "aria-label",
       open ? "Fermer le menu" : "Ouvrir le menu"
     );
+    document.body.classList.toggle("menu-open", open && mobileQuery.matches);
   };
 
   const syncMenu = () => {
     if (mobileQuery.matches) {
       if (!nav.classList.contains("is-open")) {
         links.setAttribute("hidden", "");
+        document.body.classList.remove("menu-open");
       }
     } else {
       links.removeAttribute("hidden");
       setOpen(false);
+      document.body.classList.remove("menu-open");
     }
   };
 
