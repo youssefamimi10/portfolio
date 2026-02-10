@@ -46,6 +46,8 @@ body.menu-open {
   z-index: 2;
   padding: 0;
   min-height: 100vh;
+  overflow: hidden;
+  isolation: isolate;
   background: url("PhotoProfil.jpeg?v=20260209-5") center / cover no-repeat;
 }
 
@@ -1133,10 +1135,10 @@ body.menu-open {
   .hero::after {
     content: "";
     position: absolute;
-    inset: 0;
+    inset: -16px;
     background: url("pro-RMZhdVhj.jpeg") center / cover no-repeat;
     filter: blur(14px);
-    transform: scale(1.06);
+    transform: none;
     z-index: 0;
   }
 
