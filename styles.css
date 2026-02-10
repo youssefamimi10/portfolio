@@ -390,7 +390,6 @@ body.menu-open {
   box-shadow: 0 12px 20px rgba(242, 107, 58, 0.25);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.btn.ghost { color: var(--card);}
 .btn:hover,
 .btn:focus {
   transform: translateY(-2px);
@@ -402,6 +401,23 @@ body.menu-open {
   color: var(--ink);
   border: 1px solid var(--border);
   box-shadow: none;
+}
+
+/* Improve readability for the "Me contacter" ghost button on the hero */
+.hero .hero-actions .btn.ghost {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.64);
+  box-shadow: 0 10px 20px rgba(8, 7, 6, 0.22);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.hero .hero-actions .btn.ghost:hover,
+.hero .hero-actions .btn.ghost:focus {
+  background: rgba(255, 255, 255, 0.28);
+  color: #fff;
 }
 
 .btn.mobile-only {
@@ -1239,6 +1255,22 @@ body.menu-open {
   .hero-actions .btn {
     width: 100%;
     padding: 12px 14px;
+  }
+
+  .hero .hero-actions .btn.ghost {
+    background: rgba(255, 255, 255, 0.46);
+    color: #1a1713;
+    border: 1px solid rgba(29, 26, 22, 0.2);
+    box-shadow: none;
+    text-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .hero .hero-actions .btn.ghost:hover,
+  .hero .hero-actions .btn.ghost:focus {
+    background: rgba(255, 255, 255, 0.62);
+    color: #1a1713;
   }
 
   .section {
