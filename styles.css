@@ -1328,3 +1328,16 @@ body.menu-open {
   justify-self: end;
   grid-column: 3;
 }
+
+/* Keep the supplied company logo readable in both placements. */
+.trust-mini .trust-logos .jnp-logo {
+  width: 108px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.experience-logo.jnp-logo {
+  width: 76px;
+  height: 76px;
+  padding: 2px;
+}
